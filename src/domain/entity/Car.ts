@@ -1,6 +1,6 @@
-import ICar from "./Car.interface";
+import { ICar } from "./Car.interface";
 
-export default class Car implements ICar {
+class Car implements ICar {
   constructor({
     name,
     description,
@@ -29,3 +29,5 @@ export default class Car implements ICar {
   fine_amount: number | undefined;
   brand: string | undefined;
 }
+
+export { Car };

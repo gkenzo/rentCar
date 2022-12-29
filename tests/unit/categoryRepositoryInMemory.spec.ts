@@ -1,5 +1,5 @@
-import Category from "@/domain/entity/Category";
-import CategoryRepositoryInMemory from "@/infra/repository/CategoryRepositoryInMemory";
+import { Category } from "@/domain/entity/Category";
+import { CategoryRepositoryInMemory } from "@/infra/repository/CategoryRepositoryInMemory";
 import { v4 as uuid } from "uuid";
 
 describe("Testing Category Repository In Memory", () => {

@@ -1,4 +1,4 @@
-import Category from "../../src/domain/entity/Category";
+import { Category } from "../../src/domain/entity/Category";
 import { v4 as uuid } from "uuid";
 
 describe("Testing categories", () => {

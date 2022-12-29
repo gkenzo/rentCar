@@ -1,7 +1,7 @@
-import ICar from "../entity/Car.interface";
-import Car from "../entity/Car";
+import { ICar } from "../entity/Car.interface";
+import { Car } from "../entity/Car";
 
-export default class CarBuilder implements ICar {
+class CarBuilder implements ICar {
   license_plate: string;
   created_at: Date;
   name: string | undefined;
@@ -44,3 +44,5 @@ export default class CarBuilder implements ICar {
     this.brand = value;
   }
 }
+
+export { CarBuilder };

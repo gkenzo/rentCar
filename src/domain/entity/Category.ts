@@ -1,6 +1,6 @@
-import ICategory from "./Category.interface";
+import { ICategory } from "./Category.interface";
 
-export default class Category implements ICategory {
+class Category implements ICategory {
   id?: string;
   name: string;
   description: string;
@@ -13,3 +13,5 @@ export default class Category implements ICategory {
     this.created_at = created_at;
   }
 }
+
+export { Category };

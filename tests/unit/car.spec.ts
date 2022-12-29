@@ -1,5 +1,5 @@
-import CarBuilder from "../../src/domain/builder/CarBuilder";
-import Car from "../../src/domain/entity/Car";
+import { CarBuilder } from "../../src/domain/builder/CarBuilder";
+import { Car } from "../../src/domain/entity/Car";
 
 describe("Car", () => {
   it("expect CarBuilder to instantiate Car", () => {

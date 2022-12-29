@@ -1,4 +1,4 @@
-export default interface ICar {
+interface ICar {
   license_plate: string;
   created_at: Date;
   name: string | undefined;
@@ -8,3 +8,5 @@ export default interface ICar {
   fine_amount: number | undefined;
   brand: string | undefined;
 }
+
+export { ICar };
