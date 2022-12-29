@@ -1,8 +1,8 @@
-import { Specification } from "@/domain/entity/Specification";
 import {
   ISpecificationRepository,
   SaveSpecificationDTO,
-} from "@/domain/repository/Specification.interface";
+} from "../../modules/cars/repositories/Specification.interface";
+import { Specification } from "../../modules/cars/model/Specification";
 
 class SpecificationRepositoryInMemory implements ISpecificationRepository {
   specifications: Specification[];

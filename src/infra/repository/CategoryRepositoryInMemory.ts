@@ -1,5 +1,5 @@
-import { ICategoryRepository } from "src/domain/repository/CategoryRepository.interface";
-import { Category } from "src/domain/entity/Category";
+import { ICategoryRepository } from "../../modules/cars/repositories/CategoryRepository.interface";
+import { Category } from "../../modules/cars/model/Category";
 
 type SaveCategoryDTO = {
   name: string;
