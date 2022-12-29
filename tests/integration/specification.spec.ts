@@ -45,7 +45,7 @@ describe("Testing specifications routes", () => {
       method: "delete",
     });
   });
-  it("should not be able to create two categories with the same name", async () => {
+  it("should not be able to create two specifications with the same name", async () => {
     const specificationsDTO = {
       name: "name2",
       description: "description2",
@@ -88,7 +88,7 @@ describe("Testing specifications routes", () => {
       method: "delete",
     });
   });
-  it.only("should be able to get all categories", async () => {
+  it.only("should be able to get all specifications", async () => {
     const specificationsDTO = {
       name: "name",
       description: "description",
