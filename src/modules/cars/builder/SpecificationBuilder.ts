@@ -1,5 +1,5 @@
-import { Specification } from "../entity/Specification";
-import { ISpecification } from "../entity/Specification.interface";
+import { Specification } from "../model/Specification";
+import { ISpecification } from "../model/Specification.interface";
 
 class SpecificationBuilder implements ISpecification {
   id: string | undefined;

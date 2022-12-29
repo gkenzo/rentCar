@@ -88,7 +88,7 @@ describe("Testing specifications routes", () => {
       method: "delete",
     });
   });
-  it.only("should be able to get all specifications", async () => {
+  it("should be able to get all specifications", async () => {
     const specificationsDTO = {
       name: "name",
       description: "description",
