@@ -85,7 +85,7 @@ describe("Testing category routes", () => {
       method: "delete",
     });
   });
-  it.only("should be able to get all categories", async () => {
+  it("should be able to get all categories", async () => {
     const categoryDTO = {
       name: "name",
       description: "description",

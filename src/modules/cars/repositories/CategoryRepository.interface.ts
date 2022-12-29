@@ -1,4 +1,4 @@
-import { Category } from "../entity/Category";
+import { Category } from "../model/Category";
 import { IRepository } from "./Repository.interface";
 
 type SaveCategoryDTO = {

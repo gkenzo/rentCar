@@ -5,7 +5,6 @@ import express from "express";
 import { categoryRoutes, specificationsRoutes } from "./infra/routes";
 
 const app = express();
-
 app.use(express.json());
 app.use("/categories", categoryRoutes);
 app.use("/specifications", specificationsRoutes);

@@ -1,5 +1,5 @@
-import { ICar } from "../entity/Car.interface";
-import { Car } from "../entity/Car";
+import { ICar } from "../model/Car.interface";
+import { Car } from "../model/Car";
 
 class CarBuilder implements ICar {
   license_plate: string;

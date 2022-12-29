@@ -1,5 +1,5 @@
-import { Category } from "../entity/Category";
-import { ICategory } from "../entity/Category.interface";
+import { Category } from "../model/Category";
+import { ICategory } from "../model/Category.interface";
 
 class CategoryBuilder implements ICategory {
   id: string | undefined;

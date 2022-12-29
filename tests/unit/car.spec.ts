@@ -1,4 +1,4 @@
-import { CarBuilder } from "../../src/domain/builder/CarBuilder";
+import { CarBuilder } from "../../src/modules/cars/builder/CarBuilder";
 import { Car } from "../../src/domain/entity/Car";
 
 describe("Car", () => {

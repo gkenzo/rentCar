@@ -1,4 +1,4 @@
-import { Specification } from "../entity/Specification";
+import { Specification } from "../model/Specification";
 import { IRepository } from "./Repository.interface";
 
 type SaveSpecificationDTO = {
