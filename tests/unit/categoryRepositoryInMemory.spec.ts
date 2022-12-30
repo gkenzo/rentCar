@@ -1,5 +1,5 @@
 import { Category } from "../../src/modules/cars/model/Category";
-import { CategoryRepositoryInMemory } from "@/infra/repository/CategoryRepositoryInMemory";
+// import { CategoryRepositoryInMemory } from "@/infra/repository/CategoryRepositoryInMemory";
 import { v4 as uuid } from "uuid";
 
 // describe("Testing Category Repository In Memory", () => {

@@ -1,8 +1,8 @@
 import {
   ISpecificationRepository,
   SaveSpecificationDTO,
-} from "../../modules/cars/repositories/Specification.interface";
-import { Specification } from "../../modules/cars/model/Specification";
+} from "../Specification.interface";
+import { Specification } from "../../model/Specification";
 
 class SpecificationRepositoryInMemory implements ISpecificationRepository {
   specifications: Specification[];
@@ -16,7 +16,7 @@ class SpecificationRepositoryInMemory implements ISpecificationRepository {
   static getInstance(): SpecificationRepositoryInMemory {
     if (!SpecificationRepositoryInMemory.INSTANCE) {
       SpecificationRepositoryInMemory.INSTANCE =
-        SpecificationRepositoryInMemory.getInstance();
+        new SpecificationRepositoryInMemory();
     }
 
     return SpecificationRepositoryInMemory.INSTANCE;

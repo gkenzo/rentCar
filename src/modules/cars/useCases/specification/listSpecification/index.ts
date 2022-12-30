@@ -1,4 +1,4 @@
-import { SpecificationRepositoryInMemory } from "../../../../../infra/repository/SpecificationRepositoryInMemory";
+import { SpecificationRepositoryInMemory } from "../../../repositories/implementations/SpecificationRepositoryInMemory";
 import { ListSpecificationUseCase } from "./ListSpecificationUseCase";
 import { ListSpecificationController } from "./ListSpecificationController";
 

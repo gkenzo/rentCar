@@ -1,4 +1,4 @@
-import { SpecificationRepositoryInMemory } from "../../../../../infra/repository/SpecificationRepositoryInMemory";
+import { SpecificationRepositoryInMemory } from "../../../repositories/implementations/SpecificationRepositoryInMemory";
 import { DeleteSpecificationUseCase } from "./DeleteSpecificationUseCase";
 import { DeleteSpecificationController } from "./DeleteSpecificationController";
 

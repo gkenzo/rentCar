@@ -1,5 +1,5 @@
-import { ICategoryRepository } from "../../modules/cars/repositories/CategoryRepository.interface";
-import { Category } from "../../modules/cars/model/Category";
+import { ICategoryRepository } from "../CategoryRepository.interface";
+import { Category } from "../../model/Category";
 
 type SaveCategoryDTO = {
   name: string;
@@ -15,10 +15,8 @@ class CategoryRepositoryInMemory implements ICategoryRepository {
   }
 
   static getInstance(): CategoryRepositoryInMemory {
-    if (!CategoryRepositoryInMemory.INSTANCE) {
-      CategoryRepositoryInMemory.INSTANCE =
-        CategoryRepositoryInMemory.getInstance();
-    }
+    if (!CategoryRepositoryInMemory.INSTANCE)
+      CategoryRepositoryInMemory.INSTANCE = new CategoryRepositoryInMemory();
 
     return CategoryRepositoryInMemory.INSTANCE;
   }

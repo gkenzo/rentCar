@@ -1,4 +1,4 @@
-import { CategoryRepositoryInMemory } from "../../../../../infra/repository/CategoryRepositoryInMemory";
+import { CategoryRepositoryInMemory } from "../../../repositories/implementations/CategoryRepositoryInMemory";
 import { CreateCategoryUseCase } from "./CreateCategoryUseCase";
 import { CreateCategoryController } from "./CreateCategoryController";
 
