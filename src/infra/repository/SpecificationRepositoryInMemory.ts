@@ -7,8 +7,19 @@ import { Specification } from "../../modules/cars/model/Specification";
 class SpecificationRepositoryInMemory implements ISpecificationRepository {
   specifications: Specification[];
 
-  constructor() {
+  private static INSTANCE: SpecificationRepositoryInMemory;
+
+  private constructor() {
     this.specifications = [];
+  }
+
+  static getInstance(): SpecificationRepositoryInMemory {
+    if (!SpecificationRepositoryInMemory.INSTANCE) {
+      SpecificationRepositoryInMemory.INSTANCE =
+        SpecificationRepositoryInMemory.getInstance();
+    }
+
+    return SpecificationRepositoryInMemory.INSTANCE;
   }
 
   save({ name, description }: SaveSpecificationDTO) {

@@ -3,7 +3,7 @@ import { SearchCategoryUseCase } from "./SearchCategoryUseCase";
 import { SearchCategoryController } from "./SearchCategoryController";
 
 const searchCategoryUseCase = new SearchCategoryUseCase(
-  new CategoryRepositoryInMemory()
+  CategoryRepositoryInMemory.getInstance()
 );
 
 const searchCategoryController = new SearchCategoryController(

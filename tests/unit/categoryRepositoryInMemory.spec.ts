@@ -16,7 +16,7 @@ import { v4 as uuid } from "uuid";
 //     };
 
 //     category = new Category(categoryInputDTO);
-//     categoryRepo = new CategoryRepositoryInMemory();
+//     categoryRepo = CategoryRepositoryInMemory.getInstance();
 //     categoryRepo.save(category);
 //   });
 //   it("should be able to instantiate and save a new category", () => {

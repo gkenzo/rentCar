@@ -3,7 +3,7 @@ import { SearchSpecificationUseCase } from "./SearchSpecificationUseCase";
 import { SearchSpecificationController } from "./SearchSpecificationController";
 
 const searchSpecificationUseCase = new SearchSpecificationUseCase(
-  new SpecificationRepositoryInMemory()
+  SpecificationRepositoryInMemory.getInstance()
 );
 
 const searchSpecificationController = new SearchSpecificationController(

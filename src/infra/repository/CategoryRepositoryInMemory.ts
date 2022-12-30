@@ -8,9 +8,19 @@ type SaveCategoryDTO = {
 
 class CategoryRepositoryInMemory implements ICategoryRepository {
   categories: Category[];
+  private static INSTANCE: CategoryRepositoryInMemory;
 
-  constructor() {
+  private constructor() {
     this.categories = [];
+  }
+
+  static getInstance(): CategoryRepositoryInMemory {
+    if (!CategoryRepositoryInMemory.INSTANCE) {
+      CategoryRepositoryInMemory.INSTANCE =
+        CategoryRepositoryInMemory.getInstance();
+    }
+
+    return CategoryRepositoryInMemory.INSTANCE;
   }
 
   save({ name, description }: SaveCategoryDTO) {

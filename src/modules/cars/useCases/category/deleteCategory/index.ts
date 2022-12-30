@@ -3,7 +3,7 @@ import { DeleteCategoryUseCase } from "./DeleteCategoryUseCase";
 import { DeleteCategoryController } from "./DeleteCategoryController";
 
 const deleteCategoryUseCase = new DeleteCategoryUseCase(
-  new CategoryRepositoryInMemory()
+  CategoryRepositoryInMemory.getInstance()
 );
 
 const deleteCategoryController = new DeleteCategoryController(

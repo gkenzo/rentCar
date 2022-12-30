@@ -3,7 +3,7 @@ import { DeleteSpecificationUseCase } from "./DeleteSpecificationUseCase";
 import { DeleteSpecificationController } from "./DeleteSpecificationController";
 
 const deleteSpecificationUseCase = new DeleteSpecificationUseCase(
-  new SpecificationRepositoryInMemory()
+  SpecificationRepositoryInMemory.getInstance()
 );
 
 const deleteSpecificationController = new DeleteSpecificationController(

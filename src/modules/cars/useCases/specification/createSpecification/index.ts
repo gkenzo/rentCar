@@ -3,7 +3,7 @@ import { CreateSpecificationUseCase } from "./CreateSpecificationUseCase";
 import { CreateSpecificationController } from "./CreateSpecificationController";
 
 const createSpecificationUseCase = new CreateSpecificationUseCase(
-  new SpecificationRepositoryInMemory()
+  SpecificationRepositoryInMemory.getInstance()
 );
 
 const createSpecificationController = new CreateSpecificationController(
